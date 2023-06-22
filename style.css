@@ -1,0 +1,155 @@
+ul , li ,  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.map-inner {
+    display: flex;
+    gap: 20px;
+}
+.adress-search {
+    width: 100%;
+    height: 40px;
+    outline: none;
+}
+.leaflet-pane {
+    z-index: 10;
+}
+.adress_info {
+    display: flex;
+    align-items: center;
+}
+.adress h3 {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    white-space: nowrap;
+}
+.adress a , .adress p {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+}
+.adress_info img {
+    display: block;
+    margin-right: 10px;
+    width: 14px;
+    height: 14px;
+}
+#map {
+    width: 70%;
+    height: 600px;
+}
+#map-mobile {
+    width: 100%;
+    height: 400px;
+}
+.adress {
+    padding: 0 0 30px 0;
+    cursor: pointer;
+}
+.adress:not(:last-child) {
+    border-bottom: 1px solid #cfcfcf;
+}
+.map-inner-mobile {
+    display: none;
+}
+.tabs {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+.tab-content {
+    width: 100%;
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+/* .tab{
+    width: 100px;
+    height: 40px;
+} */
+.tab  {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: #424242;
+    padding: 10px 25px;
+    display: block;
+
+
+}
+.active-tab {
+    border-bottom: 1px solid #858585;
+}
+@media (max-width:1024px) {
+    .map-inner {
+        display: none;
+    }
+    .map-inner-mobile {
+        display: block;
+    }
+    #map {
+        width: 100%;
+        height: 300px;
+    }
+    .adress h3 {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        white-space: wrap;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+#dialogoverlay {
+    display: none;
+    opacity: .8;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #FFF;
+    width: 100%;
+    z-index: 10;
+  }
+
+  #dialogbox {
+    display: none;
+    position: fixed;
+    background: #000;
+    border-radius: 7px;
+    width: 550px;
+    z-index: 10;
+  }
+
+  #dialogbox>div {
+    background: #FFF;
+    margin: 8px;
+  }
+
+  #dialogbox>div>#dialogboxhead {
+    background: #666;
+    font-size: 19px;
+    padding: 10px;
+    color: #CCC;
+  }
+
+  #dialogbox>div>#dialogboxbody {
+    background: #333;
+    padding: 20px;
+    color: #FFF;
+  }
+
+  #dialogbox>div>#dialogboxfoot {
+    background: #666;
+    padding: 10px;
+    text-align: right;
+  }

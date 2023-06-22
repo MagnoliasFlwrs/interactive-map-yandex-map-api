@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=f287c5da-4949-4e50-ae3a-7517dae3e3a8&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main>
+        
+        <div class="content">
+            <div class="map-inner">
+                <div id="map" ></div>
+                <div class="adress_wrapper">
+                    <input id="inputSearch" class="adress-search" placeholder="Найдите своего дилера">
+                    <ul class="adress_box" id="list">
+
+                    </ul>
+                </div>
+            </div>
+            <div class="map-inner-mobile">
+                <div class="tabs">
+                    <a class="tab tab1 active-tab" href="#" >На карте</a>
+                    <a class="tab tab2 " href="#" >Список</a>
+                </div>
+                <div class="tab-content-inner">
+                    <div class="tab-content active tab1-content">
+                        <div id="map-mobile"></div>
+                    </div>
+                    <div class="tab-content tab2-content ">
+                        <div class="adress_box">
+                            <div class="adress kamenka">
+                                <h3>VOYAH на Каменногорской, 11</h3>
+                                <div class="adress_info">
+                                    <img src="https://voyah.by/wp-content/uploads/2023/06/icons8-маркер-16.png" alt="location" width="15" height="15">
+                                    <p>Минск, Каменногорская, 11</p>
+                                </div>
+                                <div class="adress_info">
+                                    <img src="https://voyah.by/wp-content/uploads/2023/06/icons8-телефон-50.png" alt="phone" width="15" height="15">
+                                    <a href="tel:+375447500600">+375 (44) 7500600</a>
+                                </div>
+                                <div class="adress_info">
+                                    <img src="https://voyah.by/wp-content/uploads/2023/06/icons8-часы-24.png" alt="clock" width="15" height="15">
+                                    <p>09:00-20:00 Пн-Сб, Вс: выходной</p>
+                                </div>
+                            </div>
+                            <div class="adress dzerz">
+                                <h3>VOYAH на пр-т Дзержинского, 134</h3>
+                                <div class="adress_info">
+                                    <img src="https://voyah.by/wp-content/uploads/2023/06/icons8-маркер-16.png" alt="location" width="15" height="15">
+                                    <p>г. Минск, пр-т Дзержинского, 134</p>
+                                </div>
+                                <div class="adress_info">
+                                    <img src="https://voyah.by/wp-content/uploads/2023/06/icons8-телефон-50.png" alt="phone" width="15" height="15">
+                                    <a href="tel:+375447500600">+375 (44) 7500600</a>
+                                </div>
+                                <div class="adress_info">
+                                    <img src="https://voyah.by/wp-content/uploads/2023/06/icons8-часы-24.png" alt="clock" width="15" height="15">
+                                    <p>09:00-20:00 Пн-Сб, Вс: выходной</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="alert-btm"></button>
+
+        <div id="dialogoverlay"></div>
+        <div id="dialogbox">
+        <div>
+            <div id="dialogboxhead"></div>
+            <div id="dialogboxbody"></div>
+            <div id="dialogboxfoot"></div>
+        </div>
+        </div>
+
+    </main>
+</body>
+<script src="/index.js"></script>
+</html>
