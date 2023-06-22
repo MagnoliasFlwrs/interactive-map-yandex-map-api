@@ -134,6 +134,7 @@ input.addEventListener('input', search);
 
 
 const dealersCenters = [
+    
     {
         title: 'VOYAH на Каменногорской, 11',
         adress : 'Минск, Каменногорская, 11',
